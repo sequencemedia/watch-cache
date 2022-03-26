@@ -1,0 +1,16 @@
+.DS_Store
+
+.editorconfig
+
+.eslintignore
+.eslintrc
+
+.gitignore
+
+coverage
+
+# NPM
+.npmignore
+.npmrc
+
+gulpfile.js
