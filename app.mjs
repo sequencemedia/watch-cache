@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import 'dotenv/config'
-
 import debug from 'debug'
 
 import {
