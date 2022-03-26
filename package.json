@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/watch-cache",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Watch and update an in-memory file list",
   "main": "./app.mjs",
   "type": "module",
