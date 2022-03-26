@@ -10,9 +10,8 @@
 .eslintignore
 .eslintrc
 
+.github
 .gitignore
-
-coverage
 
 # NPM
 .npmignore
