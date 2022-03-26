@@ -1,5 +1,10 @@
 .DS_Store
 
+.circleci
+.husky
+
+.depsrc
+
 .editorconfig
 
 .eslintignore
@@ -13,4 +18,8 @@ coverage
 .npmignore
 .npmrc
 
-gulpfile.js
+# NVM
+.nvmrc
+
+.cache
+gulpfile.mjs
