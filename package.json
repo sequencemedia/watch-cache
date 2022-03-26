@@ -1,13 +1,13 @@
 {
   "name": "@sequencemedia/watch-cache",
   "version": "1.0.4",
-  "description": "Watch and update an in-memory file list",
+  "description": "Watch files and update a file set",
   "main": "./app.mjs",
   "type": "module",
   "author": "Jonathan Perry for Sequence Media Limited <sequencemedia@sequencemedia.net>",
   "license": "MIT",
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=16.14.0"
   },
   "repository": {
     "type": "git",
