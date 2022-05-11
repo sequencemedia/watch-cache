@@ -3,8 +3,6 @@
 .circleci
 .husky
 
-.depsrc
-
 .editorconfig
 
 .eslintignore
@@ -20,5 +18,8 @@
 # NVM
 .nvmrc
 
+# Deps
+.depsrc
+
 .cache
-gulpfile.mjs
+gulpfile.*

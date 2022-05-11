@@ -11,6 +11,8 @@
 .nvmrc
 
 # Development
-.depsrc
 .cache/*
 !.cache/.gitkeep
+
+# Deps
+.depsrc
