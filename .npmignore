@@ -1,6 +1,7 @@
 .DS_Store
 
 .circleci
+.github
 .husky
 
 .editorconfig
@@ -22,4 +23,3 @@
 .depsrc
 
 .cache
-gulpfile.*
