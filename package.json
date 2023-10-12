@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/watch-cache",
-  "version": "1.0.404",
+  "version": "1.0.405",
   "description": "Watch files and update a file set",
   "main": "./app.mjs",
   "type": "module",
