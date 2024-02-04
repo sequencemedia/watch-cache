@@ -44,6 +44,10 @@
     "eslint-config-standard": "^17.1.0",
     "husky": "^9.0.10"
   },
+  "exports": {
+    "./watch-cache": "./src/index.mjs",
+    "./watch-cache/normalise": "./src/normalise.mjs"
+  },
   "imports": {
     "#watch-cache": "./src/index.mjs",
     "#watch-cache/normalise": "./src/normalise.mjs"
