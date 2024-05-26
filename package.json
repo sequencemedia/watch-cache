@@ -24,9 +24,9 @@
   "scripts": {
     "lint": "eslint . --ext .mjs,.cjs",
     "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky",
     "start": "cross-env DEBUG=@sequencemedia/watch-cache* NODE_ENV=production node .",
-    "start:dev": "cross-env DEBUG=@sequencemedia/watch-cache* NODE_ENV=development node .",
-    "prepare": "husky"
+    "start:dev": "cross-env DEBUG=@sequencemedia/watch-cache* NODE_ENV=development node ."
   },
   "dependencies": {
     "chokidar": "^3.6.0",
