@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sequencemedia/watch-cache"
+    "url": "git://github.com/sequencemedia/watch-cache.git"
   },
   "homepage": "https://github.com/sequencemedia/watch-cache",
   "bugs": {
