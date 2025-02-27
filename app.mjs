@@ -3,14 +3,12 @@
 import debug from 'debug'
 
 import {
-  readFile
-} from 'fs/promises'
-
-import {
   Command
 } from 'commander'
 
 import watchCache from '#watch-cache'
+
+import PACKAGE from './package.json' with { type: 'json' }
 
 const log = debug('@sequencemedia/watch-cache')
 
@@ -19,8 +17,6 @@ log('`watch-cache` is awake')
 const commander = new Command()
 
 async function app () {
-  const PACKAGE = JSON.parse(await readFile('./package.json'))
-
   const {
     name
   } = PACKAGE
