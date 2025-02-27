@@ -18,24 +18,21 @@ const commander = new Command()
 
 async function app () {
   const {
-    name
-  } = PACKAGE
-
-  const {
-    pid,
-    argv,
-    env: {
-      PATH
-    }
-  } = process
-
-  log(`Starting application "${name}" in process ${pid}.`)
-
-  const {
+    name,
     version
   } = PACKAGE
 
+  const {
+    pid
+  } = process
+
+  log(`Starting application "${name} (${version})" in process ${pid}.`)
+
   try {
+    const {
+      argv
+    } = process
+
     commander
       .version(version)
       .exitOverride()
@@ -50,17 +47,15 @@ async function app () {
 
     if (code !== 'commander.missingMandatoryOptionValue') error(e)
 
-    error(`Halting application "${name}" in process ${pid}.`)
+    error(`Halting application "${name} (${version})" in process ${pid}.`)
     return
   }
 
   const {
-    path = PATH
+    path
   } = commander.opts()
 
-  log({
-    path
-  })
+  log({ path })
 
   try {
     await watchCache(path)
