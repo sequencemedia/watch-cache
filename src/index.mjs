@@ -22,6 +22,7 @@ function use (key, f = () => {}) {
 
   return function log (v) {
     let r
+
     try {
       r = f(v)
       l(v)
