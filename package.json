@@ -2,7 +2,7 @@
   "name": "@sequencemedia/watch-cache",
   "version": "1.1.153",
   "description": "Watch files and update a file set",
-  "main": "./app.mjs",
+  "main": "./src/index.mjs",
   "type": "module",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
@@ -25,8 +25,8 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky",
-    "start": "cross-env DEBUG=@sequencemedia/watch-cache* NODE_ENV=production node .",
-    "start:dev": "cross-env DEBUG=@sequencemedia/watch-cache* NODE_ENV=development node ."
+    "start": "cross-env DEBUG=@sequencemedia/watch-cache* NODE_ENV=production node app.mjs",
+    "start:dev": "cross-env DEBUG=@sequencemedia/watch-cache* NODE_ENV=development node app.mjs"
   },
   "dependencies": {
     "chokidar": "^4.0.3",
@@ -45,7 +45,7 @@
     "#watch-cache/normalise": "./src/normalise.mjs"
   },
   "exports": {
-    "./watch-cache": "./src/index.mjs",
-    "./watch-cache/normalise": "./src/normalise.mjs"
+    ".": "./src/index.mjs",
+    "./normalise": "./src/normalise.mjs"
   }
 }
