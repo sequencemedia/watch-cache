@@ -85,7 +85,7 @@ export default function watchCache (path = PATH) {
   log('watchCache')
 
   return (
-    chokidar.watch(normalise(path))
+    chokidar.watch(normalise(path), { awaitWriteFinish: true })
       .on('change', use('handle-change'))
       .on('add', use('handle-add', handleAdd))
       .on('unlink', use('handle-unlink', handleUnlink))
