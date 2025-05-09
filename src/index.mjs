@@ -10,10 +10,10 @@ const error = debug('@sequencemedia/watch-cache:error')
 const PATH = '.cache'
 
 /**
- * The cache is not exposed so that its contents can be managed
- * interally (without the risk of an extraneous `add`, `delete`
- * or `clear`) to keep it in sync with the the file system path
- * being watched
+ *  The cache is not exposed so that its contents can be managed
+ *  interally (without the risk of an extraneous `add`, `delete`
+ *  or `clear`) to keep it in sync with the the file system path
+ *  being watched
  */
 const CACHE = new Set()
 
@@ -51,7 +51,7 @@ function handleError ({ message = 'No error message defined' } = {}) {
 }
 
 /**
- * Returns a duplicate of the cache
+ *  Returns a duplicate of the cache
  */
 export function getCache () {
   return (
@@ -60,10 +60,10 @@ export function getCache () {
 }
 
 /**
- * An interface to the contents of the cache
+ *  An interface to the contents of the cache
  *
- * @param {string} filePath
- * @returns {boolean}
+ *  @param {string} filePath
+ *  @returns {boolean}
  */
 export function has (filePath) {
   log('has')
@@ -74,12 +74,12 @@ export function has (filePath) {
 }
 
 /**
- * Parameter `path` is the file system path to watch. It should be a
- * directory path. It is nominally optional (so you should supply a path,
- * but if you don't then `watchPath` will apply a default)
+ *  Parameter `path` is the file system path to watch. It should be a
+ *  directory path. It is nominally optional (so you should supply a path,
+ *  but if you don't then `watchPath` will apply a default)
  *
- * @param {string} path
- * @returns {chokidar.FSWatcher}
+ *  @param {string} path
+ *  @returns {chokidar.FSWatcher}
  */
 export default function watchCache (path = PATH) {
   log('watchCache')
