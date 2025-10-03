@@ -14,6 +14,10 @@ const log = debug('@sequencemedia/watch-cache')
 
 log('`watch-cache` is awake')
 
+const {
+  table
+} = console
+
 const commander = new Command()
 
 async function app () {
@@ -55,7 +59,7 @@ async function app () {
     path
   } = commander.opts()
 
-  log({ path })
+  table({ path })
 
   try {
     await watchCache(path)
