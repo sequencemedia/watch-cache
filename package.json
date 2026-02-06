@@ -30,14 +30,14 @@
   },
   "dependencies": {
     "chokidar": "^5.0.0",
-    "commander": "^14.0.2",
+    "commander": "^14.0.3",
     "cross-env": "^10.1.0",
     "debug": "^4.4.3"
   },
   "devDependencies": {
     "@sequencemedia/eslint-config-standard": "^0.2.107",
     "eslint": "9.38.0",
-    "globals": "^17.1.0",
+    "globals": "^17.3.0",
     "husky": "^9.1.7"
   },
   "imports": {
