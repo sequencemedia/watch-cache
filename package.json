@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/watch-cache",
-  "version": "1.2.93",
+  "version": "1.2.96",
   "description": "Watch files and update a file set",
   "main": "./src/index.mjs",
   "type": "module",
@@ -35,8 +35,8 @@
     "debug": "^4.4.3"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "0.2.132",
-    "eslint": "9.38.0",
+    "@sequencemedia/eslint-config-standard": "0.3.2",
+    "eslint": "10.14.0",
     "globals": "^17.14.0",
     "husky": "^9.1.7"
   },
